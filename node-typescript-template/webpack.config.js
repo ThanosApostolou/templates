@@ -1,11 +1,12 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require("path");
 const ESLintPlugin = require("eslint-webpack-plugin");
 
-module.exports = (env, argv) => {    
-    const isProd = argv.mode === 'production';
+module.exports = (env, argv) => {
+    const isProd = argv.mode === "production";
     return {
         entry: "./src/main.ts",
-        target: 'node',
+        target: "node",
         output: {
             path: path.join(__dirname, "/build"),
             filename: "bundle.js"
@@ -33,7 +34,7 @@ module.exports = (env, argv) => {
                     test: /\.(png|svg|jpg|jpeg|gif)$/i,
                     type: "asset/resource",
                     generator: {
-                        filename: 'assets/[name][ext][query]'
+                        filename: "assets/[name][ext][query]"
                     },
                     exclude: [/node_modules/, /build/]
                 }
