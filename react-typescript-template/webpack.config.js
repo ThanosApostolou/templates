@@ -53,6 +53,12 @@ module.exports = (env, argv) => {
         ],
         devServer: {
             historyApiFallback: true,
+            client: {
+                overlay: {
+                    errors: true,
+                    warnings: false,
+                },
+            }
         },
         devtool: isProd ? false : "eval-cheap-module-source-map"
     };
