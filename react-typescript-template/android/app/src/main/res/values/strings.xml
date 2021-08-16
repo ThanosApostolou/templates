@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">react-typescript-template</string>
+    <string name="title_activity_main">react-typescript-template</string>
+    <string name="package_name">react.typescript.template</string>
+    <string name="custom_url_scheme">react.typescript.template</string>
+</resources>

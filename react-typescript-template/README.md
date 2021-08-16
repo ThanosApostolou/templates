@@ -5,4 +5,10 @@
 3. npx tsc --init
 4. npm --save install react react-dom react-router-dom @types/react @types/react-dom @types/react-router-dom
 5. npm install -D electron electron-builder
+6. npm install --save @capacitor/core @capacitor/android && npm install -D @capacitor/cli && npx cap init && npx cap add android
+```
+
+## After clone
+```
+1. npm install
 ```

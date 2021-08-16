@@ -1,0 +1,6 @@
+{
+	"appId": "react.typescript.template",
+	"appName": "react-typescript-template",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

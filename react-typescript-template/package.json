@@ -10,6 +10,7 @@
     "electron:start": "cross-env NODE_ENV=development electron .",
     "electron:serve": "concurrently npm:serve npm:electron:start",
     "electron:build": "rimraf ./dist && npm run build && electron-builder",
+    "android:start": "npm run build && npx cap run android",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "browserslist": "> 1%, not dead",
@@ -20,6 +21,7 @@
     "@babel/preset-env": "^7.12.16",
     "@babel/preset-react": "^7.12.13",
     "@babel/preset-typescript": "^7.12.16",
+    "@capacitor/cli": "^3.1.2",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@typescript-eslint/parser": "^4.15.1",
     "babel-loader": "^8.2.2",
@@ -41,6 +43,8 @@
     "webpack-dev-server": "^4.0.0-rc.0"
   },
   "dependencies": {
+    "@capacitor/android": "^3.1.2",
+    "@capacitor/core": "^3.1.2",
     "@types/react": "^17.0.18",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.1.8",
@@ -49,6 +53,8 @@
     "react-router-dom": "^5.2.0"
   },
   "build": {
-    "extraResources": ["build"]
+    "extraResources": [
+      "build"
+    ]
   }
 }
